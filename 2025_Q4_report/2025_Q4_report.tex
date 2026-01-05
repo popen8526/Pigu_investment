@@ -1,0 +1,215 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float}
+
+% 設定邊界
+\geometry{margin=1in}
+
+% 定義顏色
+\definecolor{teal}{RGB}{0,128,128}
+
+% 定義正負數顏色指令
+\newcommand{\pos}[1]{\textcolor{teal}{#1}}
+\newcommand{\negval}[1]{\textcolor{red}{#1}}
+
+\title{\textbf{Personal Investment Report}}
+\author{Yi-Fan Chen}
+\date{January 05, 2026}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+    {\Huge \textbf{PIGU INVESTMENT, INC.} \par}
+    \vspace{1.5cm}
+    {\LARGE Balance Sheet \& Portfolio Report \par}
+    \vspace{2cm}
+    {\Large As of January 05, 2026 \par}
+    \vspace*{\fill}
+\end{titlepage}
+
+\section{Introduction}
+This report provides an overview of the investment portfolio as of January 05, 2026, including current holdings, realized and unrealized gains/losses, and cash reserves. All figures are in NTD unless otherwise specified.
+
+\section{Current Holdings} 
+
+% ---------------------------------------------------------
+% Taiwan Stock Section
+% ---------------------------------------------------------
+\subsection{Holdings in Taiwan Stock Market (NTD)}
+\begingroup
+\setlength{\tabcolsep}{4pt} % 稍微縮小欄寬
+\begin{longtable}{llrrrrr}
+    \toprule
+    \textbf{Code} & \textbf{Shares} & \textbf{Avg Cost} & \textbf{Total Cost} & \textbf{Mkt Value} & \textbf{Total Gain} & \textbf{Return (\%)} \\
+    \midrule
+    2916 Munsin & 750 & 46.35 & 34,762.50 & 36,750.00 & \pos{1,988.00} & \pos{+5.72\%} \\
+    2912 President & 150 & 254.00 & 38,100.00 & 33,075.00 & \negval{-3,884.00} & \negval{-10.19\%} \\
+    2379 Realtek & 70 & 480.64 & 33,644.80 & 34,545.00 & \pos{901.20} & \pos{+2.68\%} \\
+    2610 China Air & 500 & 19.30 & 9,650.00 & 10,225.00 & \pos{575.00} & \pos{+5.96\%} \\
+    2330 TSMC & 110 & 800.00 & 88,000.00 & 183,700.00 & \pos{95,700.00} & \pos{+108.75\%} \\
+    2451 Mediatek & 30 & 1,311.80 & 39,354.00 & 45,750.00 & \pos{6,194.00} & \pos{+15.74\%} \\
+    \midrule
+    \textbf{Total} & & & \textbf{243,511.30} & \textbf{344,985.00} & \textbf{\pos{101,474.00}} & \textbf{\pos{+41.67\%}} \\
+    \bottomrule
+\end{longtable}
+\endgroup
+
+\noindent\textbf{TW Market Total Unrealized Gain:} \pos{101,474} NTD
+
+% ---------------------------------------------------------
+% US Stock Section
+% ---------------------------------------------------------
+\subsection{U.S. Stock Holdings (USD)}
+\begingroup
+\footnotesize % 縮小字體以容納欄位
+\setlength{\tabcolsep}{3pt} % 縮小欄間距
+
+\begin{longtable}{llrrrrrrr}
+    \toprule
+    \textbf{Ticker} & \textbf{Company} & \textbf{Shares} & \textbf{Avg Cost} & \textbf{Tot Cost} & \textbf{Price} & \textbf{Mkt Val} & \textbf{Gain/Loss} & \textbf{Ret \%} \\
+    \midrule
+    GEHC & GE HealthCare & 20 & 72.08 & 1,441.60 & 84.11 & 1,682.20 & \pos{+240.60} & \pos{+16.69\%} \\
+    AVGO & Broadcom Inc. & 1 & 324.72 & 324.72 & 344.58 & 344.58 & \pos{+19.86} & \pos{+6.12\%} \\
+    FISV & Fiserv, Inc. & 25 & 78.58 & 1,964.50 & 66.74 & 1,668.50 & \negval{-296.00} & \negval{-15.07\%} \\
+    HRMY & Harmony Bio. & 50 & 26.26 & 1,313.00 & 35.99 & 1,799.50 & \pos{+486.50} & \pos{+37.05\%} \\
+    KO   & Coca-Cola Co. & 10 & 68.57 & 685.70 & 68.27 & 682.70 & \negval{-3.00} & \negval{-0.44\%} \\
+    LEU  & Centrus Energy & 1 & 242.74 & 242.74 & 284.17 & 284.17 & \pos{+41.43} & \pos{+17.07\%} \\
+    MCD  & McDonald's & 3 & 295.15 & 885.45 & 301.31 & 903.93 & \pos{+18.48} & \pos{+2.09\%} \\
+    META & Meta Platforms & 5 & 634.11 & 3,170.55 & 662.37 & 3,311.85 & \pos{+141.30} & \pos{+4.46\%} \\
+    NVDA & NVIDIA Corp. & 2 & 175.56 & 351.12 & 189.95 & 379.90 & \pos{+28.78} & \pos{+8.20\%} \\
+    SNPS & Synopsys, Inc. & 3 & 387.54 & 1,162.62 & 503.01 & 1,509.03 & \pos{+346.41} & \pos{+29.79\%} \\
+    \midrule
+    \textbf{Total} & & & & \textbf{11,542.00} & & \textbf{12,566.36} & \textbf{\pos{+1,024.36}} & \textbf{\pos{+8.88\%}} \\
+    \bottomrule
+\end{longtable}
+\endgroup
+
+\noindent 
+(US Market Data: 2026-01-05. Exchange Rate: 31.48) \\
+\textbf{US Market Total Value in NTD:} $\approx$ \textbf{395,589 NTD} \\
+\textbf{US Market Total Unrealized Gain:} \pos{32,247} NTD (Approx.)
+\\
+\\
+\\
+
+% ---------------------------------------------------------
+% Realized Gains
+% ---------------------------------------------------------
+\section{Realized Gains/Losses (NTD)}
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{llrrrrr}
+    \toprule
+    \textbf{Code} & \textbf{Date} & \textbf{Sold} & \textbf{Sale Px} & \textbf{Buy Px} & \textbf{Proceeds} & \textbf{Realized G/L} \\
+    \midrule
+    TLT & 10/29 & 5 & 91.71 & 89.52 & 455.53 & \pos{+7.93} \\
+    SGOV & 10/30 & 15 & 100.70 & 100.63 & 1,507.43 & \negval{-2.02} \\
+    TLT & 11/06 & 10 & 89.80 & 89.52 & 895.00 & \negval{-0.20} \\
+    HRMY & 11/11 & 60 & 32.52 & 26.26 & 1,948.95 & \pos{+373.35} \\
+    LLY & 11/11 & 0.4 & 997.00 & 740.50 & 403.51 & \pos{+103.51} \\
+    KO & 11/21 & 10 & 72.82 & 68.57 & 727.47 & \pos{+41.77} \\
+    HRMY & 12/03 & 50 & 36.83 & 26.26 & 1,839.66 & \pos{+526.66} \\
+    SNPS & 12/-- & 2 & 501.90 & 387.54 & 1,003.80 & \pos{+228.72} \\
+    \midrule
+    \multicolumn{5}{l}{\textbf{Q4 Total (USD)}} & \textbf{8,781.35} & \textbf{\pos{+1,279.72}} \\
+    \multicolumn{5}{l}{\textbf{Q4 Total (NTD)} @ 31.48} & \textbf{276,437} & \textbf{\pos{+40,286}} \\
+    \bottomrule
+\end{longtable}
+\endgroup
+
+\noindent\textbf{Realized Gain/Loss @ Q1-Q3:} \pos{29,911} NTD \\
+\noindent\textbf{Realized Gain/Loss @ Q4:} \pos{40,286} NTD \\
+\noindent\textbf{Total Realized Gain/Loss (YTD):} \pos{70,197} NTD
+
+% ---------------------------------------------------------
+% Charts
+% ---------------------------------------------------------
+\section{Stock Equity Distribution}
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{tw_stock_equity_distribution.png}
+    \caption{Taiwan Stock Equity Distribution}
+    \label{fig:tw_stock_equity_distribution}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.7\textwidth]{us_stock_equity_distribution.png}
+    \caption{US Stock Equity Distribution}
+    \label{fig:us_stock_equity_distribution}
+\end{figure}
+
+\noindent The figures above illustrate the distribution of stock equity in the portfolio.
+
+% ---------------------------------------------------------
+% Cash
+% ---------------------------------------------------------
+\section{Cash \& Fixed Deposits (NTD)}
+\begin{longtable}{ll}
+    \toprule
+    Type & Amount (NTD) \\
+    \midrule
+    USD Cash (1,917.34 USD @ 31.48) & 60,358 \\
+    TWD Cash & 70,000 \\
+    JPY (70,000 JPY @ 0.2037) & 14,259 \\
+    \midrule
+    \textbf{Total Cash \& Fixed Deposits} & \textbf{144,617} \\
+    \bottomrule
+\end{longtable}
+
+% ---------------------------------------------------------
+% Balance Sheet (Updated with Realized Earnings)
+% ---------------------------------------------------------
+\section{Balance Sheet (NTD)}
+\begin{longtable}{lr}
+    \toprule
+    \multicolumn{2}{l}{\textbf{Assets}} \\
+    \midrule
+    \textbf{Current Assets} & \\
+    Total Cash \& Fixed Deposits & 144,617.00 \\
+    Holdings (TW Market) & 344,985.00 \\
+    Holdings (US Market - Approx) & 395,589.00 \\
+    \midrule
+    \textbf{Total Assets} & \textbf{\underline{885,191.00}} \\
+    \\
+    \multicolumn{2}{l}{\textbf{Liabilities and Equity}} \\
+    \midrule
+    \textbf{Current Liabilities} & \\
+    Short Term Debt & 120,000.00 \\
+    \textbf{Non-Current Liabilities} & \\
+    Long Term Debt & 0.00 \\
+    \midrule
+    \textbf{Total Liabilities} & \textbf{120,000.00} \\
+    \\
+    \textbf{Equity} & \\
+    Net Worth & \textbf{765,191.00} \\
+    \bottomrule
+\end{longtable}
+
+\noindent \textbf{Note:} Investments are carried at fair market value. US stocks converted at approx. 31.48 TWD/USD. \\
+\noindent \textbf{Realized Earnings This Quarter (Q4):} \pos{40,286 NTD} \\
+\noindent \textbf{Realized Earnings This Year (YTD):} \pos{70,197 NTD}
+% ---------------------------------------------------------
+% Conclusion & Outlook (New Section)
+% ---------------------------------------------------------
+\section{Conclusion \& Outlook}
+The fiscal year 2025 concluded with a solid foundation, showing a Net Worth of NTD 765,191. A significant strategic pivot characterized the fourth quarter, as the primary investment focus shifted towards the U.S. stock market. This explains the relatively minimal trading activity in the Taiwan stock market during the latter half of the year, as resources were deployed to capture opportunities in U.S. growth sectors.
+
+Looking ahead to 2026, the strategy involves a dual-market approach:
+\begin{itemize}
+    \item \textbf{U.S. Market:} Continue to cultivate the positions established in Q4 2025, focusing on high-quality growth companies in technology and healthcare while managing risk through diversification.
+    \item \textbf{Taiwan Market:} Maintain core holdings for stability and dividends, utilizing the domestic portfolio as a steady anchor against potential volatility in international markets.
+\end{itemize}
+The objective for the coming year is to balance the high-growth potential of the U.S. portfolio with the stability of Taiwan assets, ensuring sustainable wealth accumulation.
+
+\end{document}
